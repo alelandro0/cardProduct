@@ -18,17 +18,17 @@
       <div class="content">
         <button id="close" onclick="ocultar()" class="close"><i class="fas fa-times"></i></button>
         <input type="file" id="file" accept="image/*">
-        <input type="text" class="titleProduct" placeholder="Titulo:">
+        <select  class="titleProduct" id="titleProduct">
+          <option value="">Nombre del producto</option>
+        </select>
         <select name="category" id="category" class="category">
           <option value="">Seleccione una categoría</option>
-          <option class="option" value="Bebida">Licores</option>
-          <option class="option" value="Comida">Comidas</option>
-          <option class="option" value="Electrónicos">Bebidas</option>
         </select>
         <textarea name="description" class="description" placeholder="description" id="description" cols="30" rows="10"></textarea><br>
         <input type="number" id="precio" class="precio" placeholder="$precio:">
         <button class="register">Create</button>
       </div>
+      <section class="multi-Card">
     <div class="card">
       <img src="https://images.pexels.com/photos/4109850/pexels-photo-4109850.jpeg?auto=compress&cs=tinysrgb&w=600" alt="card-product">
       <h2>title-product</h2>
@@ -39,7 +39,9 @@
         </span>
         <p class="price">$price</p>
       </p>      
-    </div></div>
+    </div>
+  </section>
+</div>
   </main>
   <footer></footer>
   <script src="app.js"></script>
